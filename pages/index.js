@@ -10,10 +10,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen">
-        <div className="text-xl flex justify-around">
-          <p className="mr-2 border-2"> darkness</p>
-          <p className="mr-2 border-2"> darknezz</p>
+      <main className="min-h-screen pt-9 bg-lime-200">
+        <div className="flex flex-col">
+          <div className="flex justify-center">
+            <div className="bg-slate-200 rounded-full p-1">
+              <Image
+                src={"/iconTerraria.png"}
+                alt="Picture of the author"
+                width={90}
+                height={90}
+                style={{ borderRadius: "90px" }}
+                // blurDataURL="data:..." automatically provided
+                // placeholder="blur" // Optional blur-up while loading
+              />
+            </div>
+          </div>
+          <div className="text-center text-xl font-semibold p-2">
+            <p>Arthur Efraim</p>
+            <p className="font-normal text-sm">Front-end Developer</p>
+          </div>
+
+          <div className="flex justify-center mt-6"></div>
         </div>
       </main>
 
