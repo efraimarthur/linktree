@@ -20,8 +20,6 @@ export default function Home() {
                 width={90}
                 height={90}
                 style={{ borderRadius: "90px" }}
-                // blurDataURL="data:..." automatically provided
-                // placeholder="blur" // Optional blur-up while loading
               />
             </div>
           </div>
@@ -30,12 +28,37 @@ export default function Home() {
             <p className="font-normal text-sm">Front-end Developer</p>
           </div>
 
-          <div className="flex justify-center mt-6"></div>
+          <div className="flex items-center content-between justify-evenly flex-col mt-9 font-semibold mx-4 space-y-4 text-white">
+            <a
+              href="https://github.com/efraimarthur"
+              className="border w-full text-center py-4 bg-teal-700 rounded-md"
+            >
+              Github
+            </a>
+            <a
+              href="https://www.instagram.com/thur.ion/"
+              className="border w-full text-center py-4 bg-teal-700 rounded-md"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.linkedin.com/in/arthurefraim/"
+              className="border w-full text-center py-4 bg-teal-700 rounded-md"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://arthurefraim.vercel.app/"
+              className="border w-full text-center py-4 bg-teal-700 rounded-md"
+            >
+              Web Profile
+            </a>
+          </div>
         </div>
       </main>
 
-      <footer className="flex justify-center bg-slate-300 py-5">
-        <p>Footer</p>
+      <footer className="flex justify-center py-5 bg-lime-200">
+        <p>Footer?</p>
       </footer>
     </div>
   );
