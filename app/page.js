@@ -1,14 +1,18 @@
 import Image from "next/image";
-import profilePic from "./leonardo-da-vinci.jpg";
+import Link from "next/link";
+// import { Icon } from "@iconify-icon/react";
 
 export default function Home() {
+  // const router = useRouter();
+
   return (
     <div className="min-h-screen flex flex-col justify-between bg-orange-100 text-slate-800">
       <main className="flex flex-col items-center justify-between py-24 md:py-0 md:pt-24">
-        <div className="div border-2 border-red-400 w-full md:w-[55%] flex flex-col justify-center items-center">
-          <div className="border-2 border-slate-800 rounded-full overflow-hidden h-24 w-24 bg ">
+        <div className="div w-full md:w-[55%] flex flex-col justify-center items-center">
+          <div className="rounded-full overflow-hidden h-24 w-24 bg ">
             <Image
-              src={profilePic}
+              // src={profilePic}
+              src={"/leonardo-da-vinci.jpg"}
               alt="Picture of the author"
               width={100}
               height={100}
@@ -21,19 +25,31 @@ export default function Home() {
             <p className="text-sm">Dota 2 enjoyer</p>
           </div>
           <div className="py-2 flex">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+            <div className="">A</div>
+            <div className="">B</div>
           </div>
-          <div className="shadow-md bg-white w-full text-center mt-3 py-5 transition-all duration-200 ease-in-out md:hover:w-[105%] md:hover:font-extrabold">
+
+          <a
+            className="shadow-md bg-white w-full text-center mt-3 py-5 transition-all duration-200 ease-in-out md:hover:w-[105%] md:hover:font-extrabold"
+            href="https://github.com/efraimarthur"
+            target="_blank"
+          >
             Github
-          </div>
-          <div className="shadow-md bg-white w-full text-center mt-3 py-5 transition-all duration-200 ease-in-out md:hover:w-[105%] md:hover:font-extrabold">
-            Linkedin
-          </div>
-          <div className="shadow-md bg-white w-full text-center mt-3 py-5 transition-all duration-200 ease-in-out md:hover:w-[105%] md:hover:font-extrabold">
-            Instagram
-          </div>
+          </a>
+          <a
+            className="shadow-md bg-white w-full text-center mt-3 py-5 transition-all duration-200 ease-in-out md:hover:w-[105%] md:hover:font-extrabold"
+            href="https://arthurefraim.vercel.app/"
+            target="_blank"
+          >
+            My personal Website
+          </a>
+          <a
+            className="shadow-md bg-white w-full text-center mt-3 py-5 transition-all duration-200 ease-in-out md:hover:w-[105%] md:hover:font-extrabold"
+            href="https://www.linkedin.com/in/arthurefraim"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
         </div>
       </main>
       <footer className="text-center">
